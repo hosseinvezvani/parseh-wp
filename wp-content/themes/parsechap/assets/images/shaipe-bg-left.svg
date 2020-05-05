@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="286px" viewBox="0 0 84 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>shaipe-bg-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="22.7383496%" y1="60.7361336%" x2="32.092188%" y2="14.465043%" id="linearGradient-1">
+            <stop stop-color="#FF0000" offset="0%"></stop>
+            <stop stop-color="#FA6400" stop-opacity="0.363090035" offset="100%"></stop>
+        </linearGradient>
+        <path d="M564.067201,78.2277288 L564.067201,206.779703 L564.067201,206.779703 L545.727941,529.314042 C544.543937,550.137225 530.308356,567.928816 510.252053,573.651712 L227.284902,654.393979 C174.176174,669.548102 118.838199,638.779815 103.684076,585.671087 C103.352721,584.509832 103.042429,583.342669 102.753352,582.170174 L28.5644968,281.26069 C15.9942671,230.275926 45.0004476,178.25327 94.9800197,162.144288 L500.035441,31.5903381 C525.792561,23.2885267 553.40278,37.4388499 561.704591,63.1959696 C563.270055,68.0529618 564.067201,73.1246857 564.067201,78.2277288 Z" id="path-2"></path>
+        <filter x="1.5%" y="1.8%" width="100.5%" height="97.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="7" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.980392157   0 0 0 0 0.392156863   0 0 0 0 0  0 0 0 0.61 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="18.9563596%" y1="57.6757761%" x2="30.9228344%" y2="16.1044667%" id="linearGradient-4">
+            <stop stop-color="#FF0000" offset="0%"></stop>
+            <stop stop-color="#FA6400" stop-opacity="0.363090035" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="23.7464241%" y1="62.8912773%" x2="27.8111738%" y2="10.2920611%" id="linearGradient-5">
+            <stop stop-color="#FF0000" offset="0%"></stop>
+            <stop stop-color="#FA6400" stop-opacity="0.363090035" offset="100%"></stop>
+            <stop stop-color="#FA6400" stop-opacity="0.363090035" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Web-Design---1-" transform="translate(0.000000, -1092.000000)">
+            <g id="Services" transform="translate(-594.000000, 801.000000)">
+                <g id="shaipe-bg-left" transform="translate(384.723649, 437.370733) rotate(163.000000) translate(-384.723649, -437.370733) translate(87.723649, 93.370733)">
+                    <g id="Rectangle" transform="translate(285.157428, 346.898805) rotate(-1.000000) translate(-285.157428, -346.898805) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use fill-opacity="0.44" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                    <path d="M583.022297,78.7435114 L575.237344,212.625885 L575.237344,212.625885 L556.884561,526.718917 C555.62639,548.251498 540.435875,566.429108 519.469134,571.491793 L231.828408,640.946294 C178.348364,653.859729 124.481905,621.147229 111.278916,567.737932 L43.2973865,292.736129 C30.9392322,242.744393 58.5670879,191.541385 107.135567,174.424128 L517.817522,29.6852227 C543.34073,20.6899379 571.323497,34.0884668 580.318782,59.6116746 C582.480843,65.7463046 583.39988,72.2500049 583.022297,78.7435114 Z" id="Rectangle" fill-opacity="0.3" fill="url(#linearGradient-4)" transform="translate(304.404500, 334.744364) rotate(-1.000000) translate(-304.404500, -334.744364) "></path>
+                    <path d="M575.441478,90.1955764 L571.204096,219.27204 L571.204096,219.27204 L555.862981,526.934091 C554.738509,549.485086 538.349932,568.348218 516.177184,572.612149 L237.59377,626.185152 C185.57958,636.187745 134.788119,603.897349 121.774487,552.553671 L58.212817,301.778937 C45.584174,251.954183 72.7843041,200.670359 121.116685,183.178369 L509.792708,42.5124824 C535.239429,33.3030498 563.333793,46.4659732 572.543226,71.9126948 C574.662139,77.7674961 575.645772,83.9724938 575.441478,90.1955764 Z" id="Rectangle" fill-opacity="0.76" fill="url(#linearGradient-5)" transform="translate(306.889162, 330.947501) rotate(-1.000000) translate(-306.889162, -330.947501) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
