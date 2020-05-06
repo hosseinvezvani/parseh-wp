@@ -1,19 +1,36 @@
 ﻿<!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>چاپ پارسه</title>
-        <link rel="stylesheet" href="assets/css/ekko-lightbox.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!--    <link rel="stylesheet" href="assets/FontAwesome.Pro.5.12.0.Web/css/all.css">-->
-    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>
+        <?php
+        if (is_category()) {
+            echo 'Category: '; wp_title(''); echo ' - ';
+
+        } elseif (function_exists('is_tag') && is_tag()) {
+            single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
+
+        } elseif (is_archive()) {
+            wp_title(''); echo ' Archive - ';
+
+        } elseif (is_page()) {
+            echo wp_title(''); echo ' - ';
+
+        } elseif (is_search()) {
+            echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
+
+        } elseif (!(is_404()) && (is_single()) || (is_page())) {
+            wp_title(''); echo ' - ';
+
+        } elseif (is_404()) {
+            echo 'Not Found - ';
+
+        } bloginfo('name');
+        ?>
+    </title>
 <?php wp_head(); ?>
 </head>
 <body>
@@ -26,41 +43,22 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse menu-hover menu-hover-1" id="navbarNavDropdown">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">خانه <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">نمونه کارها</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            خدمات ما
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">کارت ویزیت</a>
-                            <a class="dropdown-item" href="#">چاپ افست</a>
-                            <div class="dropdown-divider">چاپ دیجیتال</div>
-                            <a class="dropdown-item" href="#">چاپ بوم</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ثبت سفارش</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">بلاگ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">درباره ما</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">تماس با ما</a>
-                    </li>
-                </ul>
+                <?php
+                wp_nav_menu([
+                    'menu'            => 'main-menu',
+                    'theme_location'  => 'main-menu',
+                    'container'       => 'navbar',
+                    'container_id'    => 'navbarNavDropdown',
+                    'container_class' => 'collapse navbar-collapse',
+                    'menu_id'         => false,
+                    'menu_class'      => 'nav navbar-nav',
+                    'depth'           => 3,
+                    'fallback_cb'     => 'bs4navwalker::fallback',
+                    'walker'          => new bs4navwalker()
+                ]);
+                ?>
             </div>
-            <a class="navbar-brand mx-auto" href="#"><img src="assets/images/logo-top.png"
-                                                          class="img-fluid logo-top-parshe" alt="لوگوی چاپ پارسه"></a>
+            <a class="navbar-brand mx-auto" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-top.png" class="img-fluid logo-top-parshe" alt="لوگوی چاپ پارسه"></a>
             <div class="navbar-collapse float-left collapse" id="icone-menu">
                 <ul class="nav navbar-nav  w-100 justify-content-end menu-icon">
                     <div id="search">

@@ -108,22 +108,12 @@
         </div>
     </section>
 </footer>
-
-<script defer src="assets/js/jquery-3.4.1.min.js"></script>
-<script src="assets/js/swiper.min.js"></script>
-<script defer src="assets/FontAwesome.Pro.5.12.0.Web/js/all.js"></script>
-<script defer src="assets/js/popper.min.js"></script>
-<script defer src="assets/js/bootstrap.bundle.min.js"></script>
-<script defer src="assets/js/bootstrap.min.js"></script>
-<script defer src="assets/js/ekko-lightbox.min.js"></script>
-<script defer src="assets/js/Custom.js"></script>
-<script src="assets/js/aos.js"></script>
+<?php wp_footer(); ?>
 <script>
     AOS.init({
         easing: 'ease-in-out-sine'
     });
 </script>
-<?php wp_footer(); ?>
 </body>
 </html>
 
