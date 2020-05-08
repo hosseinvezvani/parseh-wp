@@ -1,5 +1,5 @@
 <?php
-/**START load_file*/
+/**START load_file*//////////////////////////////////////////////////////////////////////
 function load_file(){
     wp_enqueue_style('lightbox', get_template_directory_uri() . '/assets/css/ekko-lightbox.css',false);
     wp_enqueue_style('bootstrap.min', get_template_directory_uri() . '/assets/css/bootstrap.min.css',false);
@@ -21,9 +21,40 @@ function load_file(){
 }
 add_action( 'wp_enqueue_scripts', 'load_file' );
 /***************Start menu**************/
-// Include custom navwalker
+// Include custom navwalker//////////////////////////////////////////////////////////////
 require_once('inc/bs4navwalker.php');
 
-// Register WordPress nav menu
+// Register WordPress nav menu///////////////////////////////////////////////////////////
 register_nav_menu('main-menu', 'منوی اصلی سایت');
+
+// Register WordPress img-size//////////////////////////////////////////////////////////
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+}
+if (function_exists('add_image_size')){
+    add_image_size( 'blog_posts_img', 187, 155,true);
+}
+//start post_view//////////////////////////////////////////////////////////////////////
+function gt_get_post_view() {
+    $count = get_post_meta( get_the_ID(), 'post_views_count', true );
+    return "$count بازدید";
+}
+function gt_set_post_view() {
+    $key = 'post_views_count';
+    $post_id = get_the_ID();
+    $count = (int) get_post_meta( $post_id, $key, true );
+    $count++;
+    update_post_meta( $post_id, $key, $count );
+}
+function gt_posts_column_views( $columns ) {
+    $columns['post_views'] = 'Views';
+    return $columns;
+}
+function gt_posts_custom_column_views( $column ) {
+    if ( $column === 'post_views') {
+        echo gt_get_post_view();
+    }
+}
+add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
+add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 ?>

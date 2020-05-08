@@ -1,0 +1,791 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wordfence Security dfgdrfdrfgrsdsa\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-22 10:40+0000\n"
+"PO-Revision-Date: 2019-05-28 03:30+0000\n"
+"Last-Translator: طلوع ارتباطات <shamidvedad@gmail.com>\n"
+"Language-Team: Persian\n"
+"Language: fa-IR\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: classes/controller/ajax.php:392
+msgid ""
+"A valid grace period is not configured to allow administrators time to "
+"activate two-factor authentication."
+msgstr ""
+
+#: views/manage/activate.php:43
+msgid "For help on setting up an app, visit our help article."
+msgstr "جهت آشنایی با نحوه تنظیمات اپلیکیشن کلیک کنید."
+
+#: views/settings/options.php:75
+msgid ""
+"If enabled, XML-RPC calls that require authentication will also require a "
+"valid 2FA code to be appended to the password. You must choose the "
+"\"Skipped\" option if you use the WordPress app, the Jetpack plugin, or "
+"other services that require XML-RPC."
+msgstr ""
+
+#. Name of the plugin
+msgid "Wordfence Security dfgdrfdrfgrsdsa"
+msgstr ""
+
+#. Description of the plugin
+msgid "Wordfence Security - Anti-virus, Firewall and Malware Scan"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://www.wordfence.com/"
+msgstr ""
+
+#: classes/controller/ajax.php:411
+msgid "All administrators already have two-factor authenication activated."
+msgstr "همه مدیران در حال حاضر تایید هویت دوعاملی را فعال کرده اند."
+
+#: classes/controller/ajax.php:414
+#, php-format
+msgid ""
+"A reminder to activate two-factor authentication was sent to %d "
+"administrator."
+msgstr "یک یادآور برای فعال کردن تایید هویت دو عاملی به مدیر %d ارسال شد."
+
+#: classes/controller/ajax.php:416
+#, php-format
+msgid ""
+"A reminder to activate two-factor authentication was sent to %d "
+"administrators."
+msgstr "یک یادآور برای فعال کردن تایید هویت دو عاملی به مدیران %d ارسال شد."
+
+#: classes/controller/settings.php:147
+#, php-format
+msgid "The IP/range %s is invalid."
+msgstr "%s آی پی/محدوده نامعتبر است"
+
+#: classes/controller/settings.php:153
+msgid "An invalid IP source was provided."
+msgstr "یک منبع آی پی نامعتبر ارائه شد."
+
+#: classes/controller/settings.php:159
+msgid "The grace period end time must be in the future."
+msgstr "مهلت زمان پایان باید در آینده باشد."
+
+#: classes/controller/users.php:437
+msgid "2FA Status"
+msgstr "وضعیت تایید هویت دو عاملی"
+
+#: classes/controller/users.php:441
+msgid "Last Login"
+msgstr "آخرین ورود"
+
+#: classes/controller/users.php:443
+msgid "Last CAPTCHA"
+msgstr "آخرین کپچا"
+
+#: classes/controller/users.php:453
+msgid "Not Allowed"
+msgstr "مجاز نیست"
+
+#: classes/controller/users.php:455 classes/controller/wordfencels.php:277
+#: classes/controller/wordfencels.php:291
+msgid "Active"
+msgstr "فعال"
+
+#: classes/controller/users.php:455 classes/controller/wordfencels.php:277
+#: classes/controller/wordfencels.php:291
+msgid "Inactive"
+msgstr "غیرفعال"
+
+#: classes/controller/users.php:467
+msgid "(not required)"
+msgstr "(ضروری نیست)"
+
+#: classes/controller/users.php:561
+#, php-format
+msgid "Edit two-factor authentication for %s"
+msgstr "ویرایش تایید هویت دو عاملی برای %s"
+
+#: classes/controller/users.php:561
+msgid "2FA"
+msgstr "تایید هویت دو عاملی"
+
+#: classes/controller/users.php:572 views/settings/user-stats.php:24
+msgid "2FA Active"
+msgstr "تایید هویت دو عاملی فعال"
+
+#: classes/controller/users.php:573
+msgid "2FA Inactive"
+msgstr "تایید هویت دو عاملی غیرفعال"
+
+#: classes/controller/wordfencels.php:71
+msgid "Login Security: Enable 2FA for these roles"
+msgstr "امنیت ورود: فعال کردن تایید هویت دو عاملی برای این نقش ها"
+
+#: classes/controller/wordfencels.php:72
+msgid "Login Security: Allow remembering device for 30 days"
+msgstr "امنیت ورود: به خاطر سپردن دستگاه برای 30 روز"
+
+#: classes/controller/wordfencels.php:73
+msgid "Login Security: Require 2FA for XML-RPC call authentication"
+msgstr ""
+"امنیت ورود: الزامی بودن تایید هویت دو عاملی برای احراز هویت تماس XML-RPC"
+
+#: classes/controller/wordfencels.php:74
+msgid "Login Security: Disable XML-RPC authentication"
+msgstr "امنیت ورود: غیرفعال کردن احراز هویت XML-RPC"
+
+#: classes/controller/wordfencels.php:75
+msgid "Login Security: Whitelisted IP addresses that bypass 2FA"
+msgstr ""
+"امنیت ورود: آدرس های آی پی در لیست سفید که احراز هویت دو عاملی را دور می "
+"زنند."
+
+#: classes/controller/wordfencels.php:76
+msgid ""
+"Login Security: Enable reCAPTCHA on the login and user registration pages"
+msgstr "امنیت ورود: فعال کردن ریکپچا در صفحات ورود و ثبت نام کاربر"
+
+#: classes/controller/wordfencels.php:133
+#, php-format
+msgid ""
+"XML-RPC authentication is disabled. Jetpack is currently active and requires "
+"XML-RPC authentication to work correctly. <a href=\"%s\">Manage Settings</a>"
+msgstr ""
+"احراز هویت XML-RPC غیرفعال است. جت پک در حال حاضر فعال است و به احراز هویت "
+"XML-RPC برای کارکرد صحیح نیازمند است. <a href=\"%s\">مدیریت تنظیمات</a>"
+
+#: classes/controller/wordfencels.php:272
+#: classes/controller/wordfencels.php:285
+msgid "Wordfence Login Security"
+msgstr "امنیت ورود وردفنس"
+
+#: classes/controller/wordfencels.php:277
+#: classes/controller/wordfencels.php:291
+msgid "Wordfence 2FA is active."
+msgstr "احراز هویت دو عاملی وردفنس فعال است."
+
+#: classes/controller/wordfencels.php:277
+#: classes/controller/wordfencels.php:291
+msgid "Wordfence 2FA is inactive."
+msgstr "احراز هویت دو عاملی وردفنس غیرفعال است."
+
+#: classes/controller/wordfencels.php:277
+#: classes/controller/wordfencels.php:291
+#: classes/controller/wordfencels.php:294
+msgid "Learn More"
+msgstr "اطلاعات بیشتر"
+
+#: classes/controller/wordfencels.php:278
+#: classes/controller/wordfencels.php:292
+msgid "Manage 2FA"
+msgstr "مدیریت احراز هویت دو عاملی"
+
+#: classes/controller/wordfencels.php:278
+msgid "Activate 2FA"
+msgstr "فعالسازی احراز هویت دو عاملی"
+
+#: classes/controller/wordfencels.php:294
+msgid "Disabled"
+msgstr "غیرفعال شده"
+
+#: classes/controller/wordfencels.php:294
+msgid ""
+"Two-factor authentication is not currently enabled for this account type. To "
+"enable it, visit the Wordfence 2FA Settings page."
+msgstr ""
+"تایید هویت دو عاملی در حال حاضر به درستی برای این حساب فعال نیست. برای فعال "
+"کردن آن، صفحه تنظیمات تایید هویت دو عاملی وردفنس را مشاهده کنید."
+
+#: classes/controller/wordfencels.php:295
+msgid "Manage 2FA Settings"
+msgstr "مدیریت تنظیمات تایید هویت دو عاملی"
+
+#: classes/controller/wordfencels.php:432
+#: classes/controller/wordfencels.php:436
+#: classes/controller/wordfencels.php:459
+msgid ""
+"<strong>VALIDATION FAILED</strong>: The 2FA code could not be validated. "
+"Please try logging in again."
+msgstr ""
+"<strong>خطای اعتبارسنجی</strong>: کد تایید هویت دو عاملی نمی تواند مورد "
+"تایید قرار گیرد. لطفا مجدد برای ورود تلاش کنید."
+
+#: classes/controller/wordfencels.php:517
+msgid ""
+"<strong>CODE INVALID</strong>: The 2FA code provided is either expired or "
+"invalid. Please try again."
+msgstr ""
+"<strong>کد نامعتبر</strong>: کد ارائه شده تایید هویت دو عاملی، منقضی شده یا "
+"نامعتبر است. دوباره تلاش کنید."
+
+#: classes/controller/wordfencels.php:539
+msgid ""
+"<strong>CODE REQUIRED</strong>: Please enter your 2FA code immediately after "
+"your password in the same field."
+msgstr ""
+"<strong>کد الزامی است</strong>: لطفا کد تایید هویت دو عاملی خود را بلافاصله "
+"پس از پسورد خود در همان فیلد وارد کنید."
+
+#: classes/controller/wordfencels.php:541
+msgid ""
+"<strong>CODE REQUIRED</strong>: Please provide your 2FA code when prompted."
+msgstr ""
+"<strong>کد الزامی است</strong>: لطفا کد تایید هویت دو عاملی خود را هنگامی که "
+"مطرح شد ارائه کنید."
+
+#: classes/controller/wordfencels.php:544
+msgid ""
+"<strong>LOGIN BLOCKED</strong>: 2FA is required to be active on all "
+"administrator accounts."
+msgstr ""
+"<strong>ورود بلاک شده</strong>: تایید هویت دو عاملی برای حساب همه مدیران "
+"الزامی است."
+
+#: classes/controller/wordfencels.php:547
+#, php-format
+msgid ""
+"You do not currently have two-factor authentication active on your account, "
+"which will be required beginning %s. <a href=\"%s\">Configure 2FA</a>"
+msgstr ""
+"در حال حاضر شما تایید هویت دو عاملی را در حساب خود فعال نکرده اید. این مورد "
+"از %s الزامی خواهد شد. <a href=\"%s\">پیکربندی تایید هویت دوعاملی</a>"
+
+#: classes/controller/wordfencels.php:709
+#: classes/controller/wordfencels.php:709
+#: classes/controller/wordfencels.php:710
+msgid "Two-Factor Authentication"
+msgstr "تایید هویت دوعاملی"
+
+#: classes/controller/wordfencels.php:720
+#: classes/controller/wordfencels.php:720 views/settings/options.php:8
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: classes/controller/wordfencels.php:721
+msgid "Login Security Settings"
+msgstr "تنظیمات امنیت ورود"
+
+#: classes/model/notice.php:29
+#, php-format
+msgid ""
+"<a class=\"wfls-btn wfls-btn-default wfls-btn-sm wfls-dismiss-link\" "
+"href=\"#\" onclick=\"GWFLS.dismiss_notice('%s'); return false;\">Dismiss</a>"
+msgstr ""
+"<a class=\"wfls-btn wfls-btn-default wfls-btn-sm wfls-dismiss-link\" "
+"href=\"#\" onclick=\"GWFLS.dismiss_notice('%s'); return false;\">نادیده "
+"گرفتن</a>"
+
+#: views/manage/deactivate.php:17
+msgid "Wordfence 2FA Active"
+msgstr "تایید هویت دوعاملی وردفنس فعال"
+
+#: views/manage/deactivate.php:22
+msgid ""
+"Wordfence two-factor authentication is currently active on your account. You "
+"may deactivate it by clicking the button below."
+msgstr ""
+"تایید هویت دو عاملی در حال حاضر در حساب شما فعال است. شما می توانید آن را با "
+"کلیک بر روی دکمه زیر غیرفعال کنید."
+
+#: views/manage/deactivate.php:22
+#, php-format
+msgid ""
+"Wordfence two-factor authentication is currently active on the account "
+"<strong>%s</strong>. You may deactivate it by clicking the button below."
+msgstr ""
+"تایید هویت دو عاملی وردفنس در حال حاضر در <strong>%s</strong> حساب فعال است. "
+"شما می توانید آن را با کلیک بر روی دکمه زیر غیرفعال کنید."
+
+#: views/manage/deactivate.php:23
+msgid "Deactivate"
+msgstr "غیرفعال کردن"
+
+#: views/manage/deactivate.php:66 views/manage/deactivate.php:75
+msgid "Error Deactivating 2FA"
+msgstr "خطای غیرفعال سازی تایید هویت دوعاملی"
+
+#: views/manage/deactivate.php:75
+msgid ""
+"An error was encountered while trying to deactivate two-factor "
+"authentication. Please try again."
+msgstr ""
+"هنگام تلاش برای غیرفعال کردن احراز هویت دو عامل، با یک خطا مواجه شد. لطفا "
+"دوباره تلاش کنید."
+
+#: views/manage/activate.php:14
+msgid "2. Enter Code from Authenticator App"
+msgstr "2. وارد کردن کد از اپلیکیشن احراز هویت"
+
+#: views/manage/activate.php:19 views/manage/activate.php:121
+msgid "Download Recovery Codes"
+msgstr "دانلود کدهای ریکاوری"
+
+#: views/manage/activate.php:19
+msgid "Optional"
+msgstr "اختیاری"
+
+#: views/manage/activate.php:20 views/manage/regenerate.php:66
+#, php-format
+msgid ""
+"Use one of these %d codes to log in if you lose access to your authenticator "
+"device. Codes are %d characters long plus optional spaces. Each one may be "
+"used only once."
+msgstr ""
+"اگر به دستگاه احراز هویت خود دسترسی ندارید از یکی از %d کد زیر برای ورود "
+"استفاده کنید. کدهایی دارای %d کاراکتر و فضاهای خالی هستند. هر کدام فقط یک "
+"بار می تواند استفاده شود."
+
+#: views/manage/activate.php:23 views/manage/regenerate.php:68
+#, php-format
+msgid "Two-Factor Authentication Recovery Codes - %s (%s)"
+msgstr "کدهای ریکاوری تایید هویت دو عاملی - %s (%s)"
+
+#: views/manage/activate.php:24 views/manage/regenerate.php:69
+#, php-format
+msgid ""
+"Each line of %d letters and numbers is a single recovery code, with optional "
+"spaces for readability. To use a recovery code, after entering your username "
+"and password, enter the code like \"1234 5678 90AB CDEF\" at the 2FA prompt. "
+"If your site has a custom login prompt and does not show a 2FA prompt, you "
+"can use the single-step method by entering your password and the code "
+"together in the Password field, like \"mypassword1234 5678 90AB CDEF\". Your "
+"recovery codes are:"
+msgstr ""
+"هر خط از اعداد و خطوط %d یک کد ریکاوری تکی است، با فضاهای اختیاری برای قابل "
+"خواندن بودن. برای استفاده از یک کد ریکاوری، بعد از واردکردن نام کاربری و رمز "
+"عبور خود، کد را همانند \"1234 5678 90AB CDEF\" در فوریت تایید هویت دوعاملی "
+"وارد کنید. اگر سایت شما یک ورود سریع سفارشی داشته و تایید هویت دو مرحله ای "
+"فوری را نمایش نمی دهد، می توانید از حالت تک مرحله ای توسط ورود همزمان رمز "
+"عبور خود و کد در فیلد رمز عبور استفاده کنید همانند : \"mypassword1234 5678 "
+"90AB CDEF\" . کدهای ریکاوری شما :"
+
+#: views/manage/activate.php:33 views/manage/regenerate.php:77
+msgid "Download"
+msgstr "دانلود"
+
+#: views/manage/activate.php:37
+msgid ""
+"Enter the code from your authenticator app below to verify and activate two-"
+"factor authentication for this account."
+msgstr ""
+"برای تایید و فعال کردن تایید هویت دو عاملی برای این حساب، کد را از اپلیکیشن "
+"احراز هویت خود در زیر وارد کنید."
+
+#: views/manage/activate.php:45
+msgid "Activate"
+msgstr "فعال کردن"
+
+#: views/manage/activate.php:83 views/manage/activate.php:111
+msgid "Error Activating 2FA"
+msgstr "خطا هنگام فعال سازی تایید هویت دو عاملی"
+
+#: views/manage/activate.php:111
+msgid ""
+"An error was encountered while trying to activate two-factor authentication. "
+"Please try again."
+msgstr "هنگام تلاش برای احراز هویت دو عاملی یک خطا رخ داد. دوباره تلاش کنید."
+
+#: views/manage/activate.php:122
+msgid ""
+"Reminder: If you lose access to your authenticator device, you can use "
+"recovery codes to log in. If you have not saved a copy of your recovery "
+"codes, we recommend downloading them now."
+msgstr ""
+"یادآوری: اگر به دستگاه احراز هویت خود دسترسی ندارید، می توانید از کدهای "
+"ریکاوری برای ورود استفاده نمایید. اگر ذخیره ای از کدهای ریکاوری خود ندارید، "
+"پیشنهاد می کنیم که آن ها را دانلود کنید."
+
+#: views/manage/regenerate.php:12
+msgid "Recovery Codes"
+msgstr "کدهای ریکاوری"
+
+#: views/manage/regenerate.php:18
+msgid "Generate New Codes"
+msgstr "تولید کدهای جدید"
+
+#: views/manage/regenerate.php:61 views/manage/regenerate.php:92
+msgid "Error Generating New Codes"
+msgstr "خطا هنگام تولید کدهای جدید"
+
+#: views/manage/regenerate.php:80
+msgid "New Recovery Codes"
+msgstr "کدهای ریکاوری جدید"
+
+#: views/manage/regenerate.php:92
+msgid ""
+"An error was encountered while trying to generate new recovery codes. Please "
+"try again."
+msgstr "خطایی در هنگام تولید کدهای ریکاوری جدید رخ داد. دوباره تلاش کنید."
+
+#: views/options/option-captcha.php:20
+msgid "Enable reCAPTCHA on the login and user registration pages"
+msgstr "فعال کردن ریکپچا در صفحات ورود و ثبت نام کاربر"
+
+#: views/options/option-captcha.php:22
+msgid ""
+"Note: This feature requires a free site key and secret for the <a "
+"href=\"https://www.google.com/recaptcha/intro/v3.html\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">Google reCAPTCHA v3 Service</a>."
+msgstr ""
+"توجه: این ویژگی نیاز به کلید سایت رایگان برای <a href=\"https://www.google."
+"com/recaptcha/intro/v3.html\" target=\"_blank\" rel=\"noopener noreferrer\">"
+"خدمات نسخه 3 ریکپچای گوگل</a> دارد."
+
+#: views/options/option-ip-source.php:8
+msgid ""
+"Use the most secure method to get visitor IP addresses. Prevents spoofing "
+"and works with most sites."
+msgstr ""
+"برای دریافت آدرس IP بازدیدکننده از امن ترین روش استفاده کنید. مانع خرابکاری "
+"شده و در اکثر سایت ها از آن استفاده می شود."
+
+#: views/options/option-ip-source.php:8
+msgid "(Recommended)"
+msgstr "(توصیه شده)"
+
+#: views/options/option-ip-source.php:9
+msgid ""
+"Use PHP's built in REMOTE_ADDR and don't use anything else. Very secure if "
+"this is compatible with your site."
+msgstr ""
+"استفاده از REMOTE_ADDR و عدم استفاده از هیچ چیز دیگر. اگر با سایت شما سازگار "
+"باشد بسیار امن است."
+
+#: views/options/option-ip-source.php:10
+msgid ""
+"Use the X-Forwarded-For HTTP header. Only use if you have a front-end proxy "
+"or spoofing may result."
+msgstr ""
+"استفاده از X-Forwarded-For هدر HTTP. فقط اگر شما پراکسی front-end دارید یا "
+"جعلی استفاده می شود."
+
+#: views/options/option-ip-source.php:11
+msgid ""
+"Use the X-Real-IP HTTP header. Only use if you have a front-end proxy or "
+"spoofing may result."
+msgstr ""
+"استفاده از X-Real-IP هدر HTTP. فقط اگر شما پراکسی front-end دارید یا جعلی "
+"استفاده می شود."
+
+#: views/options/option-ip-source.php:19
+msgid "How to get IPs"
+msgstr "چگونه آی پی ها دریافت کنیم."
+
+#: views/options/option-ip-source.php:47
+msgid "Trusted Proxies"
+msgstr "پروکسی مورد اعتماد"
+
+#: views/options/option-ip-source.php:48
+msgid ""
+"These IPs (or CIDR ranges) will be ignored when determining the requesting "
+"IP via the X-Forwarded-For HTTP header. Enter one IP or CIDR range per line."
+msgstr ""
+"این آی پی ها (یا محدوده CIDR) هنگام تعیین آی پی درخواست شده از طریق X-"
+"Forwarded-For HTTP هدر خواهد شد. یک محدوده آی پی یا CIDR را در هر خط وارد "
+"کنید."
+
+#: views/options/option-require-2fa.php:42
+msgid "Require 2FA for all administrators"
+msgstr "الزامی کردن تایید هویت دو عاملی برای همه مدیران"
+
+#: views/options/option-require-2fa.php:44
+msgid ""
+"Note: This setting requires at least one administrator to have 2FA active. "
+"On multisite, this option applies only to super admins."
+msgstr ""
+"توجه: این تنظیمات به حداقل یک مدیر برای فعال کردن تایید هویت دو عاملی نیاز "
+"دارد. در شبکه وردپرس، این گزینه تنها به سوپر ادمین اعمال می شود."
+
+#: views/options/option-require-2fa.php:56
+msgid "Send Notification"
+msgstr "ارسال اعلان"
+
+#: views/options/option-require-2fa.php:227
+#: views/options/option-require-2fa.php:234
+msgid "Error Sending Notification"
+msgstr "خطای ارسال اعلان"
+
+#: views/options/option-require-2fa.php:230
+msgid "Notification Sent"
+msgstr "اعلان ارسال شد"
+
+#: views/options/option-require-2fa.php:234
+msgid ""
+"An error was encountered while trying to send the notification. Please try "
+"again."
+msgstr "خطایی در حین ارسال اعلان رخ داد. دوباره تلاش کنید."
+
+#: views/page/manage.php:22
+#, php-format
+msgid ""
+"Two-Factor Authentication, or 2FA, significantly improves login security for "
+"your website. Wordfence 2FA works with a number of TOTP-based apps like "
+"Google Authenticator, FreeOTP, and Authy. For a full list of tested TOTP-"
+"based apps, <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">"
+"click here</a>."
+msgstr ""
+"تایید هویت دو عاملی یا به طور خلاصه 2FA، به طور قابل توجهی امنیت ورود به "
+"سایت شما را بهبود می بخشد. تایید هویت دو عاملی وردفنس با یکی از اپ های مبتنی "
+"بر TOTP نظیر Google Authenticator، FreeOTP یا FreeOTP کار می کند. برای "
+"مشاهده لیست کاملی از این اپلیکیشن ها <a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener noreferrer\">اینجا کلیک کنید</a>."
+
+#: views/page/manage.php:29
+#, php-format
+msgid "Editing User:&nbsp;&nbsp;%s <span class=\"wfls-text-plain\">%s</span>"
+msgstr ""
+"در حال ویرایش کاربر: &nbsp;&nbsp;%s <span class=\"wfls-text-plain\">%s</span>"
+
+#: views/page/manage.php:29
+msgid "(you)"
+msgstr "(شما)"
+
+#: views/page/manage.php:96
+msgid "Server Time:"
+msgstr "زمان سرور:"
+
+#: views/page/manage.php:97
+msgid "Corrected Time:"
+msgstr "زمان اصلاح شده:"
+
+#: views/page/manage.php:98
+msgid "Detected IP:"
+msgstr "IP شناسایی شده:"
+
+#: views/page/manage.php:98
+msgid "whitelisted"
+msgstr "لیست سفید"
+
+#: views/settings/options.php:12
+msgid "Cancel Changes"
+msgstr "لغو تغییرات"
+
+#: views/settings/options.php:12
+msgid "Save Changes"
+msgstr "ذخیره تغییرات"
+
+#: views/settings/options.php:27
+msgid "Super Administrator"
+msgstr "سوپر ادمین"
+
+#: views/settings/options.php:45
+msgid "Enable 2FA for these roles"
+msgstr "فعال کردن تایید هویت دو عاملی برای این نقش ها"
+
+#: views/settings/options.php:64
+msgid "Allow remembering device for 30 days"
+msgstr "مجاز بودن یادآوری دستگاه برای 30 روز"
+
+#: views/settings/options.php:65
+msgid ""
+"If enabled, users with 2FA enabled may choose to be prompted for a code only "
+"once every 30 days per device."
+msgstr ""
+"اگر فعال باشد، کاربران با تایید هویت دو عاملی فعال می توانند انتخاب کنند که "
+"هر 30 روز یک کد را وارد کنند."
+
+#: views/settings/options.php:74
+msgid "Require 2FA for XML-RPC call authentication"
+msgstr "الزامی کردن تایید هویت دوعاملی برای احراز هویت تماس های XML-RPC"
+
+#: views/settings/options.php:77
+msgid "Skipped"
+msgstr "رد شده"
+
+#: views/settings/options.php:78
+msgid "Required"
+msgstr "ضروری"
+
+#: views/settings/options.php:92
+msgid "Disable XML-RPC authentication"
+msgstr "غیرفعال کردن احراز هویت XML-RPC"
+
+#: views/settings/options.php:93
+msgid ""
+"If disabled, XML-RPC requests that attempt authentication will be rejected."
+msgstr ""
+"اگر غیرفعال باشد، درخواست های XML-RPC که نیاز به احراز هویت دارند رد خواهند "
+"شد."
+
+#: views/settings/options.php:102
+msgid "Whitelisted IP addresses that bypass 2FA"
+msgstr "آدرس های آیپی لیست سفید که تایید هویت دو عاملی را دور می زنند."
+
+#: views/settings/options.php:104
+msgid ""
+"Whitelisted IPs must be placed on separate lines. You can specify ranges "
+"using the following formats: 127.0.0.1/24, 127.0.0.[1-100], or 127.0.0.1-127."
+"0.1.100."
+msgstr ""
+"آی پی های لیست سفید باید در خطوط جداگانه قرار گیرند. می توانید محدوده ها را "
+"با استفاده از فرمت های زیر مشخص کنید: 127.0.0.1/24, 127.0.0.[1-100], یا 127."
+"0.0.1-127.0.1.100."
+
+#: views/settings/user-stats.php:11
+msgid "User Summary"
+msgstr "خلاصه کاربر"
+
+#: views/settings/user-stats.php:22
+msgid "Role"
+msgstr "نقش"
+
+#: views/settings/user-stats.php:23
+msgid "Total Users"
+msgstr "مجموع کاربران"
+
+#: views/settings/user-stats.php:45
+msgid "Total"
+msgstr "مجموع"
+
+#: views/settings/user-stats.php:51
+msgid ""
+"* User counts currently only reflect the main site on multisite "
+"installations."
+msgstr ""
+"* شمار کاربران در حال حاضر تنها منعکس کننده سایت اصلی در سایت شبکه است."
+
+#. Author of the plugin
+msgid "Wordfence"
+msgstr "وردفنس"
+
+#: classes/controller/ajax.php:57 classes/controller/ajax.php:67
+msgid "You do not have permission to change options."
+msgstr "شما مجوز کافی برای تغییر گزینه ها را ندارید."
+
+#: classes/controller/ajax.php:62
+msgid "You do not have permission to send notifications."
+msgstr "شما مجوز کافی برای ارسال اعلانات را ندارید."
+
+#: classes/controller/ajax.php:94
+msgid "An unknown action was provided."
+msgstr "یک اقدام ناشناخته انجام شد."
+
+#: classes/controller/ajax.php:101
+msgid "An expected parameter was not provided."
+msgstr "پارامتر مورد انتظار ارائه نشده است."
+
+#: classes/controller/ajax.php:109
+msgid ""
+"Your browser sent an invalid security token. Please try reloading this page."
+msgstr ""
+"مرورگر شما یک توکن امنیتی نامعتبر ارسال کرد. لطفا مجدد این صفجه را بازگزاری "
+"کنید."
+
+#: classes/controller/ajax.php:266
+msgid "You do not have permission to activate the given user."
+msgstr "شما مجوز کافی برای فعال کردن کاربر داده شده را ندارید."
+
+#: classes/controller/ajax.php:271
+msgid "The given user does not exist."
+msgstr "کاربر داده شده وجود ندارد"
+
+#: classes/controller/ajax.php:276
+msgid "You do not have permission to activate 2FA."
+msgstr "شما مجوز کافی برای فعال کردن تایید هویت دو عاملی را ندارید"
+
+#: classes/controller/ajax.php:280
+msgid "The given user already has two-factor authentication active."
+msgstr "کاربر مشخص شده در حال حاضر تایید هویت دو عاملی را فعال کرده است."
+
+#: classes/controller/ajax.php:285
+msgid ""
+"The code provided does not match the expected value. Please verify that the "
+"time on your authenticator device is correct and that this server's time is "
+"correct."
+msgstr ""
+"کد ارائه شده با مقدار مورد انتظار یکسان نیست. لطفا بررسی کنید که زمان بر روی "
+"دستگاه تأیید شما درست است و زمان این سرور درست است."
+
+#: classes/controller/ajax.php:289 classes/controller/ajax.php:341
+#: views/manage/regenerate.php:17
+#, php-format
+msgid ""
+"%d unused recovery code remains. You may generate a new set by clicking "
+"below."
+msgstr ""
+"%d کد ریکاوری استفاده نشده باقی مانده است. شما می توانید یک مورد جدید را با "
+"کلیک کردن در زیر تولید کنید"
+
+#: classes/controller/ajax.php:289 classes/controller/ajax.php:341
+#: views/manage/regenerate.php:17
+#, php-format
+msgid ""
+"%d unused recovery codes remain. You may generate a new set by clicking "
+"below."
+msgstr ""
+"%d کد ریکاوری استفاده نشده باقی مانده است. شما می توانید یک مورد جدید را با "
+"کلیک کردن در زیر تولید کنید"
+
+#: classes/controller/ajax.php:297
+msgid "You do not have permission to deactivate the given user."
+msgstr "شما مجوز کافی برای غیرفعال کردن کاربر مربوطه را ندارید."
+
+#: classes/controller/ajax.php:302 classes/controller/ajax.php:328
+msgid "The user does not exist."
+msgstr "کاربر وجود ندارد"
+
+#: classes/controller/ajax.php:307
+msgid "You do not have permission to deactivate 2FA."
+msgstr "شما مجوز کافی برای غیرفعال کردن تایید هویت 2 عاملی را ندارید."
+
+#: classes/controller/ajax.php:311 classes/controller/ajax.php:337
+msgid "The user specified does not have two-factor authentication active."
+msgstr "کاربر مشخص شده تایید هویت دو عاملی را فعال نکرده است."
+
+#: classes/controller/ajax.php:323
+msgid ""
+"You do not have permission to generate new recovery codes for the given user."
+msgstr ""
+"شما مجوز کافی برای تولید کدهای ریکاوری جدید برای کاربر مربوطه را ندارید"
+
+#: classes/controller/ajax.php:333
+msgid "You do not have permission to generate new recovery codes."
+msgstr "شما مجوز کافی برای تولید کدهای ریکاوری را ندارید."
+
+#: classes/controller/ajax.php:351
+#, php-format
+msgid "An error occurred while saving the configuration: %s"
+msgstr "در حین ذخیره پیکربندی خطایی رخ داد: %s"
+
+#: classes/controller/ajax.php:359
+#, php-format
+msgid "Errors occurred while saving the configuration: %s"
+msgstr "در حین ذخیره پیکربندی خطاهایی رخ داد: %s"
+
+#: classes/controller/ajax.php:365
+msgid "Errors occurred while saving the configuration."
+msgstr "در حین ذخیره پیکربندی خطاهایی رخ داد."
+
+#: classes/controller/ajax.php:388
+msgid "Two-factor authentication is not currently required for administrators."
+msgstr "تایید هویت دو عاملی در حال حاضر برای مدیران الزامی نیست."
+
+#: classes/controller/ajax.php:395
+#, php-format
+msgid "2FA will soon be required on %s"
+msgstr "تایید هویت دو عاملی به زودی در %s اجباری می شود."
+
+#: classes/controller/ajax.php:396
+#, php-format
+msgid ""
+"You do not currently have two-factor authentication active on your account, "
+"which will be required beginning %s.\n"
+"\n"
+"Configure 2FA: %s"
+msgstr ""
+"در حال حاضر تایید هویت دو عاملی را روی حساب خود فعال نکرده اید، که از %s "
+"الزامی خواهد شد.\n"
+"\n"
+"پیکربندی تایید هویت دو عاملی: %s"
+
+#: classes/controller/wordfencels.php:682
+#: classes/controller/wordfencels.php:682
+#: classes/controller/wordfencels.php:685
+#: classes/controller/wordfencels.php:685
+msgid "Login Security"
+msgstr "امنیت ورود به سایت "
