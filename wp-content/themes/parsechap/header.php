@@ -5,32 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        <?php
-        if (is_category()) {
-            echo 'Category: '; wp_title(''); echo ' - ';
-
-        } elseif (function_exists('is_tag') && is_tag()) {
-            single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
-
-        } elseif (is_archive()) {
-            wp_title(''); echo ' Archive - ';
-
-        } elseif (is_page()) {
-            echo wp_title(''); echo ' - ';
-
-        } elseif (is_search()) {
-            echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
-
-        } elseif (!(is_404()) && (is_single()) || (is_page())) {
-            wp_title(''); echo ' - ';
-
-        } elseif (is_404()) {
-            echo 'Not Found - ';
-
-        } bloginfo('name');
-        ?>
-    </title>
+    <title>پارسه</title>
+<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_url'); ?><!--/assets/css/ekko-lightbox.css">-->
+<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_url'); ?><!--/assets/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="assets/FontAwesome.Pro.5.12.0.Web/css/all.css">-->
+<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_url'); ?><!--/assets/css/bootstrap-rtl.min.css">-->
+<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_url'); ?><!--/assets/css/swiper.min.css">-->
+<!--    <link rel="stylesheet" href="assets/css/aos.css">-->
+<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_url'); ?><!--/style.css">-->
+<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_url'); ?><!--/assets/css/responsive.css">-->
 <?php wp_head(); ?>
 </head>
 <body>

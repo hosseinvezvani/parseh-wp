@@ -11,13 +11,14 @@ function load_file(){
 
 
     wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'aos', get_template_directory_uri() . '/assets/js/aos.js', array(), '1.0.0', true );
     wp_enqueue_script( 'FontAwesome', get_template_directory_uri() . '/assets/FontAwesome.Pro.5.12.0.Web/js/all.js', array(), '1.0.0', true );
     wp_enqueue_script( 'popper', get_template_directory_uri() . '/assets/js/popper.min.js', array(), '1.0.0', true );
     wp_enqueue_script( 'bootstrap.bundle', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array(), '1.0.0', true );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script( 'ekko-lightbox', get_template_directory_uri() . '/assets/js/ekko-lightbox.min.js', array(), '1.0.0', true );
     wp_enqueue_script( 'Custom', get_template_directory_uri() . '/assets/js/Custom.js', array(), '1.0.0', true );
-    wp_enqueue_script( 'aos', get_template_directory_uri() . '/assets/js/aos.js', array(), '1.0.0', true );
+
 }
 add_action( 'wp_enqueue_scripts', 'load_file' );
 /***************Start menu**************/
@@ -33,6 +34,8 @@ if ( function_exists( 'add_theme_support' ) ) {
 }
 if (function_exists('add_image_size')){
     add_image_size( 'blog_posts_img', 187, 155,true);
+    add_image_size( 'filter_posts_img', 192, 132,true);
+    add_image_size( 'filter_lightbox_posts_img', 800, 600,true);
 }
 //start post_view//////////////////////////////////////////////////////////////////////
 function gt_get_post_view() {
@@ -57,4 +60,22 @@ function gt_posts_custom_column_views( $column ) {
 }
 add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
 add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
+
+///////////Start the_title_excerpt///////////////////////////////////////////////////////////////
+function the_title_excerpt($before = '', $after = '', $echo = true, $length = false)
+{
+    $title = get_the_title();
+
+    if ( $length && is_numeric($length) ) {
+        $title = substr( $title, 0, $length );
+    }
+
+    if ( strlen($title)> 0 ) {
+        $title = apply_filters('the_title_excerpt', $before . $title . $after, $before, $after);
+        if ( $echo )
+            echo $title;
+        else
+            return $title;
+    }
+}
 ?>

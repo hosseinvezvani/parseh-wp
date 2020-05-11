@@ -108,6 +108,14 @@
         </div>
     </section>
 </footer>
+<!--<script defer src="--><?php //bloginfo('template_url'); ?><!--/assets/js/jquery-3.4.1.min.js"></script>-->
+<!--<script src="--><?php //bloginfo('template_url'); ?><!--/assets/js/swiper.min.js"></script>-->
+<!--<script defer src="--><?php //bloginfo('template_url'); ?><!--/assets/FontAwesome.Pro.5.12.0.Web/js/all.js"></script>-->
+<!--<script defer src="--><?php //bloginfo('template_url'); ?><!--/assets/js/popper.min.js"></script>-->
+<!--<script defer src="--><?php //bloginfo('template_url'); ?><!--/assets/js/bootstrap.bundle.min.js"></script>-->
+<!--<script defer src="--><?php //bloginfo('template_url'); ?><!--/assets/js/bootstrap.min.js"></script>-->
+<!--<script defer src="--><?php //bloginfo('template_url'); ?><!--/assets/js/ekko-lightbox.min.js"></script>-->
+<!--<script defer src="--><?php //bloginfo('template_url'); ?><!--/assets/js/Custom.js"></script>-->
 <?php wp_footer(); ?>
 <script>
     AOS.init({

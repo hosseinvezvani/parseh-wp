@@ -124,7 +124,7 @@
         margin: 4px;
     }
     .pad15 h3.title-heading{
-    font-size: .8rem;
+        font-size: .8rem;
         font-weight: 100;
     }
     .MultiCarousel-inner .item .pad15 hr {
@@ -134,7 +134,6 @@
     .abstract-p, .abstract-blog{
         font-size: .75rem;
         height: 115px;
-        line-height: 1.5rem;
     }
     #search-input.active{
         width: 215px;
@@ -151,7 +150,7 @@
         top: 49rem;
         right: 33%;
     }
-    }
+}
 @media(min-width:768px) {
     #navbarNavDropdown {
         width: 20%;
@@ -291,7 +290,7 @@
         width: 100%;
         font-size: .78rem;
     }
-      .blog-slider__title h2 {
+    .blog-slider__title h2 {
         font-size: 1rem;
     }
     .blog-slider__code {
@@ -357,7 +356,7 @@
     .post-hidden.justify-content-between{
         -ms-flex-pack: start!important;
         justify-content: start!important;
-      }
+    }
     .post-viwe{
         padding-right: 14rem;
     }
@@ -491,9 +490,9 @@
     }
 }
 @media (max-width: 360px){
-        .order {
-            margin-top: 32rem;
-        }
+    .order {
+        margin-top: 32rem;
+    }
     span.logo-clients img {
         padding-right: 10px;
         width: 95px;
