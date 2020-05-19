@@ -14,6 +14,7 @@
             </div>
         </nav>
         <div class="tab-content my-2 py-2 my-lg-5 py-lg-2 aos-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-offset="-1" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-in-out" id="nav-tabContent">
+      
 
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="row">
@@ -191,6 +192,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     </div>

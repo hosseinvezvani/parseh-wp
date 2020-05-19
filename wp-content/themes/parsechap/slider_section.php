@@ -1,48 +1,26 @@
 <section class="slider">
     <div class="blog-slider">
         <div class="blog-slider__wrp swiper-wrapper">
+            <?php
+            $the_query = new WP_Query( array( 'post_type' => 'sliders','cat' =>'7','posts_per_page'=>'6' ) ); ?>
+            <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <div class="blog-slider__item swiper-slide">
                 <div class="blog-slider__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759872/kuldar-kalvik-799168-unsplash.jpg"
-                         alt="">
+                    <?php the_post_thumbnail ('slider_img' , array('class' => 'img-fluid')); ?>
                 </div>
                 <div class="blog-slider__content">
-                    <span class="blog-slider__code">تاریخ انتشار : ۱ فروردین ۱۳۹۹</span>
-                    <div class="blog-slider__title"><h2>عنوان مطلب اول</h2></div>
-                    <div class="blog-slider__text"><p>اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به
-                            متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا طرح‌نما (به انگلیسی:
-                            Lorem ipsum) متنی ساختگی و بدون معنی است</p></div>
-                    <a href="#" class="btn blog-slider__button">ادامه مطلب...</a>
+                    <span class="blog-slider__code">تاریخ انتشار : <?php the_time('j F Y'); ?> </span>
+                    <div class="blog-slider__title"><h2><?php the_title(); ?></h2></div>
+                    <div class="blog-slider__text"><p><?php the_content_rss('', TRUE, '',35); ?></p></div>
+                    <a href="<?php the_permalink(); ?>" class="btn blog-slider__button">ادامه مطلب...</a>
                 </div>
             </div>
-            <div class="blog-slider__item swiper-slide">
-                <div class="blog-slider__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/jason-leung-798979-unsplash.jpg"
-                         alt="">
-                </div>
-                <div class="blog-slider__content">
-                    <span class="blog-slider__code">تاریخ انتشار : ۱۲ فروردین ۱۳۹۹</span>
-                    <div class="blog-slider__title"><h2>عنوان مطلب دوم</h2></div>
-                    <div class="blog-slider__text"><p>اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به
-                            متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا طرح‌نما (به انگلیسی:
-                            Lorem ipsum) متنی ساختگی و بدون معنی است</p></div>
-                    <a href="#" class="btn blog-slider__button">ادامه مطلب...</a>
-                </div>
-            </div>
-            <div class="blog-slider__item swiper-slide">
-                <div class="blog-slider__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1535759871/alessandro-capuzzi-799180-unsplash.jpg"
-                         alt="">
-                </div>
-                <div class="blog-slider__content">
-                    <span class="blog-slider__code">تاریخ انتشار : ۳ فروردین ۱۳۹۹</span>
-                    <div class="blog-slider__title"><h2>عنوان مطلب سوم</h2></div>
-                    <div class="blog-slider__text"><p>اگر شما یک طراح هستین و یا با طراحی های گرافیکی سروکار دارید به
-                            متن های برخورده اید که با نام لورم ایپسوم شناخته می‌شوند. لورم ایپسوم یا طرح‌نما (به انگلیسی:
-                            Lorem ipsum) متنی ساختگی و بدون معنی است</p></div>
-                    <a href="#" class="btn blog-slider__button">ادامه مطلب...</a>
-                </div>
-            </div>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <p><?php esc_html_e( 'متاسفانه هیچ اسلایدی در سایت درج نشده است.' ); ?></p>
+            <?php endif; ?>
         </div>
         <div class="blog-slider__pagination"></div>
         <!-- Add Arrows -->

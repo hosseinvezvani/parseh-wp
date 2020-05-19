@@ -59,7 +59,7 @@
     }
     .slider {
         height: 840px;
-        background-position: right -150px top 10px , left 150px bottom 100px;
+        background-position: right -150px top 20px , left 150px bottom 100px;
     }
     .blog-slider__content {
         padding-right: 5%;
@@ -188,7 +188,7 @@
     }
     .slider {
         height: 840px;
-        background-position: right -150px top 10px , left 150px bottom 100px;
+        background-position: right -150px top 25px , left 150px bottom 100px;
     }
     .blog-slider__content {
         padding-right: 20%;

@@ -19,11 +19,11 @@
         <div class="clearfix"></div>
         <div class="row mr-2 mt-2 mr-md-5" id="portfolio-wrapper" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="600">
             <?php
-            $the_query = new WP_Query( array( 'post_type' => 'portfolio','posts_per_page'=>'15' ) ); ?>
+            $the_query = new WP_Query( array( 'post_type' => 'portfolio','cat' =>'4','posts_per_page'=>'15' ) ); ?>
             <?php if ( $the_query->have_posts() ) : ?>
                 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                     <div class="col-4 col-lg-2 col-md-2 portfolio-item <?php the_field('selectpotfolio'); ?>">
-                        <a href="assets/images/filter/adds-1.jpg" data-toggle="lightbox" data-max-width="600" data-gallery="example-gallery" data-title="نمونه کارهای چاپ پارسه" data-footer="A custom footer text" data-gallery="remoteload" dideo-checked="true">
+                        <a href="<?php echo get_the_post_thumbnail_url( null, 'full' ); ?>" data-toggle="lightbox" width="600" data-gallery="example-gallery" data-title="<?php the_title_excerpt('', '...', true, '80'); ?>" data-footer="<?php the_content_rss('', TRUE, '', 35); ?>" data-gallery="remoteload" dideo-checked="true" data-link="تست">
                             <?php the_post_thumbnail ('filter_posts_img' , array('class' => 'img-fluid')); ?>
                             <div class="details">
                                 <h4><?php the_field('typeofworks'); ?></h4>
